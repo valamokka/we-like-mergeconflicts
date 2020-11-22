@@ -1,9 +1,14 @@
 public class ConflictingMerges {
 
     public static void main() {
-        System.out.println("Hello Marton"); // Names!! :D
-        System.out.println("Hello Odi");
-        System.out.println("Hogy vagy?");
+       sayhello();
+    }
+    private static String getHelloMessage() {
+        return "Hello, World!";
     }
 
+    private static void sayhello() {
+        String message = getHelloMessage();
+        System.out.println(message);
+    }
 }
